@@ -1,0 +1,8 @@
+Ogre3d 1.7.1 on OSX 1.6.3
+
+Currently, CMakeLists.txt only supports OSX (to my knowledge) and to get
+it to work one must edit the CMakeLists.txt file to fix my personal paths.
+
+Uses ExampleFramework.
+
+
