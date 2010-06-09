@@ -10,11 +10,14 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
-  "/Library/Frameworks/Ogre.framework/Headers"
   "/Library/Frameworks/Cg.framework/Headers"
   "/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers"
   "/Developer/Headers/FlatCarbon"
-  "/Users/yoda/Ogre/include/OIS"
+  "/Developer/SDKs/OgreSDK/include/OGRE/OSX"
+  "/Developer/SDKs/OgreSDK/include/OGRE"
+  "/Library/Frameworks/Ogre.framework/Headers"
+  "/Developer/SDKs/OgreSDK/include/OIS"
+  "/Developer/SDKs/OgreSDK/include"
   "/opt/local/include"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

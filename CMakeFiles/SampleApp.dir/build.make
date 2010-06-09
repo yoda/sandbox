@@ -81,7 +81,7 @@ SampleApp_OBJECTS = \
 SampleApp_EXTERNAL_OBJECTS =
 
 SampleApp: CMakeFiles/SampleApp.dir/src/SampleApp.cpp.o
-SampleApp: /Users/yoda/Ogre/lib/release/libOIS.a
+SampleApp: /Developer/SDKs/OgreSDK/lib/release/libOIS.a
 SampleApp: CMakeFiles/SampleApp.dir/build.make
 SampleApp: CMakeFiles/SampleApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable SampleApp"

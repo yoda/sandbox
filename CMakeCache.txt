@@ -177,11 +177,206 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a library.
 IOKit_LIBRARY:FILEPATH=/System/Library/Frameworks/IOKit.framework
 
+//x
+OGRE_CONFIG_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
 //Path to a library.
 OGRE_LIBRARY:FILEPATH=/Library/Frameworks/Ogre.framework
 
 //x
-OIS_INCLUDE_DIR:PATH=/Users/yoda/Ogre/include/OIS
+OGRE_LIBRARY_DBG:FILEPATH=OGRE_LIBRARY_DBG-NOTFOUND
+
+//x
+OGRE_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_LIBRARY_REL:FILEPATH=OGRE_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_MEDIA_DIR:PATH=/Developer/SDKs/OgreSDK/Media
+
+//x
+OGRE_PLUGIN_DIR_DBG:STRING=NOTFOUND
+
+//x
+OGRE_PLUGIN_DIR_REL:STRING=NOTFOUND
+
+//x
+OGRE_Paging_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Paging_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/libOgrePaging.dylib
+
+//x
+OGRE_Paging_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Paging_LIBRARY_REL:FILEPATH=OGRE_Paging_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_Plugin_BSPSceneManager_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_BSPSceneManager_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_BSPSceneManager.dylib
+
+//x
+OGRE_Plugin_BSPSceneManager_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_BSPSceneManager_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_BSPSceneManager.dylib
+
+//x
+OGRE_Plugin_CgProgramManager_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_CgProgramManager_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_CgProgramManager.dylib
+
+//x
+OGRE_Plugin_CgProgramManager_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_CgProgramManager_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_CgProgramManager.dylib
+
+//x
+OGRE_Plugin_OctreeSceneManager_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_OctreeSceneManager_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_OctreeSceneManager.dylib
+
+//x
+OGRE_Plugin_OctreeSceneManager_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_OctreeSceneManager_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_OctreeSceneManager.dylib
+
+//x
+OGRE_Plugin_OctreeZone_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_OctreeZone_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_OctreeZone.dylib
+
+//x
+OGRE_Plugin_OctreeZone_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_OctreeZone_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_OctreeZone.dylib
+
+//x
+OGRE_Plugin_PCZSceneManager_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_PCZSceneManager_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_PCZSceneManager.dylib
+
+//x
+OGRE_Plugin_PCZSceneManager_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_PCZSceneManager_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_PCZSceneManager.dylib
+
+//x
+OGRE_Plugin_ParticleFX_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Plugin_ParticleFX_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_ParticleFX.dylib
+
+//x
+OGRE_Plugin_ParticleFX_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Plugin_ParticleFX_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/Plugin_ParticleFX.dylib
+
+//Path to a file.
+OGRE_Property_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//Path to a library.
+OGRE_Property_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/libOgreProperty.dylib
+
+//Path to a library.
+OGRE_Property_LIBRARY_REL:FILEPATH=OGRE_Property_LIBRARY_REL-NOTFOUND
+
+//Path to a file.
+OGRE_RTShaderSystem_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//Path to a library.
+OGRE_RTShaderSystem_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/libOgreRTShaderSystem.dylib
+
+//Path to a library.
+OGRE_RTShaderSystem_LIBRARY_REL:FILEPATH=OGRE_RTShaderSystem_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D10_INCLUDE_DIR:PATH=OGRE_RenderSystem_Direct3D10_INCLUDE_DIR-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D10_LIBRARY_DBG:FILEPATH=OGRE_RenderSystem_Direct3D10_LIBRARY_DBG-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D10_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D10_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_Direct3D10_LIBRARY_REL-NOTFOUND
+
+//Path to a file.
+OGRE_RenderSystem_Direct3D11_INCLUDE_DIR:PATH=OGRE_RenderSystem_Direct3D11_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+OGRE_RenderSystem_Direct3D11_LIBRARY_DBG:FILEPATH=OGRE_RenderSystem_Direct3D11_LIBRARY_DBG-NOTFOUND
+
+//Path to a library.
+OGRE_RenderSystem_Direct3D11_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_Direct3D11_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D9_INCLUDE_DIR:PATH=OGRE_RenderSystem_Direct3D9_INCLUDE_DIR-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D9_LIBRARY_DBG:FILEPATH=OGRE_RenderSystem_Direct3D9_LIBRARY_DBG-NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D9_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_RenderSystem_Direct3D9_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_Direct3D9_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_RenderSystem_GLES_INCLUDE_DIR:PATH=OGRE_RenderSystem_GLES_INCLUDE_DIR-NOTFOUND
+
+//x
+OGRE_RenderSystem_GLES_LIBRARY_DBG:FILEPATH=OGRE_RenderSystem_GLES_LIBRARY_DBG-NOTFOUND
+
+//x
+OGRE_RenderSystem_GLES_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_RenderSystem_GLES_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_GLES_LIBRARY_REL-NOTFOUND
+
+//x
+OGRE_RenderSystem_GL_INCLUDE_DIR:PATH=OGRE_RenderSystem_GL_INCLUDE_DIR-NOTFOUND
+
+//x
+OGRE_RenderSystem_GL_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/RenderSystem_GL.dylib
+
+//x
+OGRE_RenderSystem_GL_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_RenderSystem_GL_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/RenderSystem_GL.dylib
+
+//x
+OGRE_Terrain_INCLUDE_DIR:PATH=/Library/Frameworks/Ogre.framework/Headers
+
+//x
+OGRE_Terrain_LIBRARY_DBG:FILEPATH=/Developer/SDKs/OgreSDK/lib/libOgreTerrain.dylib
+
+//x
+OGRE_Terrain_LIBRARY_FWK:STRING=NOTFOUND
+
+//x
+OGRE_Terrain_LIBRARY_REL:FILEPATH=OGRE_Terrain_LIBRARY_REL-NOTFOUND
+
+//x
+OIS_INCLUDE_DIR:PATH=/Developer/SDKs/OgreSDK/include/OIS
 
 //x
 OIS_LIBRARY_DBG:FILEPATH=OIS_LIBRARY_DBG-NOTFOUND
@@ -190,7 +385,7 @@ OIS_LIBRARY_DBG:FILEPATH=OIS_LIBRARY_DBG-NOTFOUND
 OIS_LIBRARY_FWK:STRING=NOTFOUND
 
 //x
-OIS_LIBRARY_REL:FILEPATH=/Users/yoda/Ogre/lib/release/libOIS.a
+OIS_LIBRARY_REL:FILEPATH=/Developer/SDKs/OgreSDK/lib/release/libOIS.a
 
 //Include for OpenGL on OSX
 OPENGL_INCLUDE_DIR:PATH=/System/Library/Frameworks/OpenGL.framework
@@ -223,6 +418,10 @@ Boost_LIBRARY_DIRS-ADVANCED:INTERNAL=1
 Boost_LIB_VERSION:INTERNAL=1_42
 //The version number for boost libraries
 Boost_VERSION:INTERNAL=104200
+//ADVANCED property for variable: CARBON_LIBRARY
+CARBON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CG_LIBRARY
+CG_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
@@ -344,8 +543,164 @@ CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: IOKit_LIBRARY
 IOKit_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_CONFIG_INCLUDE_DIR
+OGRE_CONFIG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_INCLUDE_DIR
+OGRE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_LIBRARY
 OGRE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_LIBRARY_DBG
+OGRE_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_LIBRARY_FWK
+OGRE_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_LIBRARY_REL
+OGRE_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_MEDIA_DIR
+OGRE_MEDIA_DIR-ADVANCED:INTERNAL=1
+OGRE_PKGC_CFLAGS:INTERNAL=
+OGRE_PKGC_CFLAGS_I:INTERNAL=
+OGRE_PKGC_CFLAGS_OTHER:INTERNAL=
+OGRE_PKGC_FOUND:INTERNAL=
+OGRE_PKGC_INCLUDEDIR:INTERNAL=
+OGRE_PKGC_LIBDIR:INTERNAL=
+OGRE_PKGC_LIBS:INTERNAL=
+OGRE_PKGC_LIBS_L:INTERNAL=
+OGRE_PKGC_LIBS_OTHER:INTERNAL=
+OGRE_PKGC_LIBS_PATHS:INTERNAL=
+OGRE_PKGC_OGRE_INCLUDEDIR:INTERNAL=
+OGRE_PKGC_OGRE_LIBDIR:INTERNAL=
+OGRE_PKGC_OGRE_PREFIX:INTERNAL=
+OGRE_PKGC_OGRE_VERSION:INTERNAL=
+OGRE_PKGC_PREFIX:INTERNAL=
+OGRE_PKGC_STATIC_CFLAGS:INTERNAL=
+OGRE_PKGC_STATIC_CFLAGS_I:INTERNAL=
+OGRE_PKGC_STATIC_CFLAGS_OTHER:INTERNAL=
+OGRE_PKGC_STATIC_LIBDIR:INTERNAL=
+OGRE_PKGC_STATIC_LIBS:INTERNAL=
+OGRE_PKGC_STATIC_LIBS_L:INTERNAL=
+OGRE_PKGC_STATIC_LIBS_OTHER:INTERNAL=
+OGRE_PKGC_STATIC_LIBS_PATHS:INTERNAL=
+OGRE_PKGC_VERSION:INTERNAL=
+//ADVANCED property for variable: OGRE_PLUGIN_DIR_DBG
+OGRE_PLUGIN_DIR_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_PLUGIN_DIR_REL
+OGRE_PLUGIN_DIR_REL-ADVANCED:INTERNAL=1
+//x
+OGRE_PREFIX_WATCH_INT_CHECK:INTERNAL=/Developer/SDKs/OgreSDK;/Users/yoda/Ogre;/opt/ogre;/opt/OGRE;/usr/lib/ogre;/usr/lib/OGRE;/usr/local/lib/ogre;/usr/local/lib/OGRE;/Users/yoda/ogre;/Users/yoda/OGRE;NOTFOUND;NOTFOUND
+//ADVANCED property for variable: OGRE_Paging_INCLUDE_DIR
+OGRE_Paging_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Paging_LIBRARY_DBG
+OGRE_Paging_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Paging_LIBRARY_FWK
+OGRE_Paging_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Paging_LIBRARY_REL
+OGRE_Paging_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_BSPSceneManager_INCLUDE_DIR
+OGRE_Plugin_BSPSceneManager_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_BSPSceneManager_LIBRARY_DBG
+OGRE_Plugin_BSPSceneManager_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_BSPSceneManager_LIBRARY_FWK
+OGRE_Plugin_BSPSceneManager_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_BSPSceneManager_LIBRARY_REL
+OGRE_Plugin_BSPSceneManager_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_CgProgramManager_INCLUDE_DIR
+OGRE_Plugin_CgProgramManager_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_CgProgramManager_LIBRARY_DBG
+OGRE_Plugin_CgProgramManager_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_CgProgramManager_LIBRARY_FWK
+OGRE_Plugin_CgProgramManager_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_CgProgramManager_LIBRARY_REL
+OGRE_Plugin_CgProgramManager_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeSceneManager_INCLUDE_DIR
+OGRE_Plugin_OctreeSceneManager_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeSceneManager_LIBRARY_DBG
+OGRE_Plugin_OctreeSceneManager_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeSceneManager_LIBRARY_FWK
+OGRE_Plugin_OctreeSceneManager_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeSceneManager_LIBRARY_REL
+OGRE_Plugin_OctreeSceneManager_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeZone_INCLUDE_DIR
+OGRE_Plugin_OctreeZone_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeZone_LIBRARY_DBG
+OGRE_Plugin_OctreeZone_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeZone_LIBRARY_FWK
+OGRE_Plugin_OctreeZone_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_OctreeZone_LIBRARY_REL
+OGRE_Plugin_OctreeZone_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_PCZSceneManager_INCLUDE_DIR
+OGRE_Plugin_PCZSceneManager_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_PCZSceneManager_LIBRARY_DBG
+OGRE_Plugin_PCZSceneManager_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_PCZSceneManager_LIBRARY_FWK
+OGRE_Plugin_PCZSceneManager_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_PCZSceneManager_LIBRARY_REL
+OGRE_Plugin_PCZSceneManager_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_ParticleFX_INCLUDE_DIR
+OGRE_Plugin_ParticleFX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_ParticleFX_LIBRARY_DBG
+OGRE_Plugin_ParticleFX_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_ParticleFX_LIBRARY_FWK
+OGRE_Plugin_ParticleFX_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Plugin_ParticleFX_LIBRARY_REL
+OGRE_Plugin_ParticleFX_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Property_INCLUDE_DIR
+OGRE_Property_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Property_LIBRARY_DBG
+OGRE_Property_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Property_LIBRARY_REL
+OGRE_Property_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RTShaderSystem_INCLUDE_DIR
+OGRE_RTShaderSystem_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RTShaderSystem_LIBRARY_DBG
+OGRE_RTShaderSystem_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RTShaderSystem_LIBRARY_REL
+OGRE_RTShaderSystem_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D10_INCLUDE_DIR
+OGRE_RenderSystem_Direct3D10_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D10_LIBRARY_DBG
+OGRE_RenderSystem_Direct3D10_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D10_LIBRARY_FWK
+OGRE_RenderSystem_Direct3D10_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D10_LIBRARY_REL
+OGRE_RenderSystem_Direct3D10_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D11_INCLUDE_DIR
+OGRE_RenderSystem_Direct3D11_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D11_LIBRARY_DBG
+OGRE_RenderSystem_Direct3D11_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D11_LIBRARY_REL
+OGRE_RenderSystem_Direct3D11_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D9_INCLUDE_DIR
+OGRE_RenderSystem_Direct3D9_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D9_LIBRARY_DBG
+OGRE_RenderSystem_Direct3D9_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D9_LIBRARY_FWK
+OGRE_RenderSystem_Direct3D9_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_Direct3D9_LIBRARY_REL
+OGRE_RenderSystem_Direct3D9_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GLES_INCLUDE_DIR
+OGRE_RenderSystem_GLES_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GLES_LIBRARY_DBG
+OGRE_RenderSystem_GLES_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GLES_LIBRARY_FWK
+OGRE_RenderSystem_GLES_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GLES_LIBRARY_REL
+OGRE_RenderSystem_GLES_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GL_INCLUDE_DIR
+OGRE_RenderSystem_GL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GL_LIBRARY_DBG
+OGRE_RenderSystem_GL_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GL_LIBRARY_FWK
+OGRE_RenderSystem_GL_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_RenderSystem_GL_LIBRARY_REL
+OGRE_RenderSystem_GL_LIBRARY_REL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Terrain_INCLUDE_DIR
+OGRE_Terrain_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Terrain_LIBRARY_DBG
+OGRE_Terrain_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Terrain_LIBRARY_FWK
+OGRE_Terrain_LIBRARY_FWK-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Terrain_LIBRARY_REL
+OGRE_Terrain_LIBRARY_REL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OIS_INCLUDE_DIR
 OIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OIS_LIBRARY_DBG
@@ -379,7 +734,7 @@ OIS_PKGC_STATIC_LIBS_OTHER:INTERNAL=
 OIS_PKGC_STATIC_LIBS_PATHS:INTERNAL=
 OIS_PKGC_VERSION:INTERNAL=
 //x
-OIS_PREFIX_PATH_INT_CHECK:INTERNAL=/iPhoneDependencies;/iPhoneDependencies;/Dependencies;/Dependencies;~/Ogre;/Users/yoda/buildbox/OgreSDK
+OIS_PREFIX_PATH_INT_CHECK:INTERNAL=/iPhoneDependencies;/iPhoneDependencies;/Dependencies;/Dependencies;/Developer/SDKs/OgreSDK;/Users/yoda/Ogre
 //ADVANCED property for variable: OPENGL_INCLUDE_DIR
 OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
@@ -388,5 +743,6 @@ OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_checked_OGRE_PKGC:INTERNAL=1
 __pkg_config_checked_OIS_PKGC:INTERNAL=1
 

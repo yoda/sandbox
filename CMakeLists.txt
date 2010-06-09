@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 PROJECT(sandbox)
 
-set(OGRE_SDK ~/Ogre)
+set(OGRE_SDK /Developer/SDKs/OgreSDK)
 
 # Find actual Ogre root
 if (WIN32 OR APPLE)
@@ -16,11 +16,9 @@ elseif (UNIX)
   set(CMAKE_MODULE_PATH "${OGRE_ROOT_DIR}/lib/OGRE/cmake")
 endif ()
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
-
 IF(APPLE)
     #SET(GUI_TYPE MACOSX_BUNDLE)
-    INCLUDE_DIRECTORIES(/Library/Frameworks/Ogre.framework/Headers)
+    #INCLUDE_DIRECTORIES(/Library/Frameworks/Ogre.framework/Headers)
     INCLUDE_DIRECTORIES(/Library/Frameworks/Cg.framework/Headers)
     INCLUDE_DIRECTORIES(/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers)
     INCLUDE_DIRECTORIES ( /Developer/Headers/FlatCarbon )
@@ -30,6 +28,8 @@ IF(APPLE)
     FIND_LIBRARY(IOKit_LIBRARY IOKit)
     MARK_AS_ADVANCED (OGRE_LIBRARY)
     MARK_AS_ADVANCED (IOKit_LIBRARY)
+    MARK_AS_ADVANCED (CARBON_LIBRARY)
+    MARK_AS_ADVANCED (CG_LIBRARY)
     SET(EXTRA_LIBS ${OGRE_LIBRARY} ${IOKit_LIBRARY} ${CARBON_LIBRARY} ${CG_LIBRARY}) 
 ENDIF (APPLE)
 
@@ -45,12 +45,16 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 endif ()
 
 FIND_PACKAGE(OpenGL)
+FIND_PACKAGE(OGRE)
 FIND_PACKAGE(OIS)
 FIND_PACKAGE(Boost)
 
 INCLUDE_DIRECTORIES(
     ${OpenGL_INCLUDE_DIR}
-    ${OIS_INCLUDE_DIR}
+    "${OGRE_SDK}/include/OGRE/OSX"
+    "${OGRE_SDK}/include/OGRE"
+    ${OGRE_INCLUDE_DIR}
+    ${OIS_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
     ${OGRE_Plugin_PCZSceneManager_INCLUDE_DIRS}
     ${OGRE_Plugin_OctreeZone_INCLUDE_DIRS}
@@ -67,3 +71,7 @@ target_link_libraries (SampleApp
 )
 
 MESSAGE("OIS_LIBRARY: ${OIS_LIBRARY}")
+MESSAGE("OctreeZone: ${OGRE_Plugin_PCZSceneManager_INCLUDE_DIRS}")
+MESSAGE("OGRE_INCLUDE_DIR: ${OGRE_INCLUDE_DIR}")
+MESSAGE("OGRE_INCLUDE_DIRS: ${OGRE_INCLUDE_DIRS}")
+MESSAGE("OGRE_LIBRARY: ${OGRE_LIBRARY}")
