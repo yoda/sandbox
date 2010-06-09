@@ -4,6 +4,7 @@ PROJECT(sandbox)
 set(OGRE_SDK /Developer/SDKs/OgreSDK)
 
 # Find actual Ogre root
+# Stole this stuff from Ogre's CmakeLists.txt in theory it lets me use their cmake find scripts...in theory
 if (WIN32 OR APPLE)
   get_filename_component(OGRE_ROOT_DIR "${OGRE_SDK}" ABSOLUTE)
   set(OGRE_TEMPLATES_DIR "${OGRE_ROOT_DIR}/cmake")
@@ -16,9 +17,9 @@ elseif (UNIX)
   set(CMAKE_MODULE_PATH "${OGRE_ROOT_DIR}/lib/OGRE/cmake")
 endif ()
 
+
+# Cmake framework stuff to make frameworks actually work.
 IF(APPLE)
-    #SET(GUI_TYPE MACOSX_BUNDLE)
-    #INCLUDE_DIRECTORIES(/Library/Frameworks/Ogre.framework/Headers)
     INCLUDE_DIRECTORIES(/Library/Frameworks/Cg.framework/Headers)
     INCLUDE_DIRECTORIES(/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers)
     INCLUDE_DIRECTORIES ( /Developer/Headers/FlatCarbon )
@@ -33,22 +34,25 @@ IF(APPLE)
     SET(EXTRA_LIBS ${OGRE_LIBRARY} ${IOKit_LIBRARY} ${CARBON_LIBRARY} ${CG_LIBRARY}) 
 ENDIF (APPLE)
 
+# Stuff I found in CMakeLists.txt in Ogre the i386 is nessecary for me.
 set(OGRE_LIB_TYPE SHARED)
 set(OGRE_STATIC OFF)
 if (APPLE)
     set(CMAKE_OSX_ARCHITECTURES "i386")
-    #include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/OGRE/OSX")
 endif ()
 
+# Wont work if compiling for iphone
 if (CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-msse)
 endif ()
 
+# Find packages finding ogre here is probably redundant
 FIND_PACKAGE(OpenGL)
 FIND_PACKAGE(OGRE)
 FIND_PACKAGE(OIS)
 FIND_PACKAGE(Boost)
 
+# include within the sdk dir is required for ExampleFramework, not sure for non exampleframework stuff.
 INCLUDE_DIRECTORIES(
     ${OpenGL_INCLUDE_DIR}
     "${OGRE_SDK}/include/OGRE/OSX"
@@ -64,12 +68,14 @@ ADD_EXECUTABLE(SampleApp
         src/SampleApp.cpp
 )
 
+# Extra libs is from the framework stuff
 target_link_libraries (SampleApp
     ${OIS_LIBRARY}
     ${Boost_LIBRARIES}
     ${EXTRA_LIBS}
 )
 
+# Debug stuff...
 MESSAGE("OIS_LIBRARY: ${OIS_LIBRARY}")
 MESSAGE("OctreeZone: ${OGRE_Plugin_PCZSceneManager_INCLUDE_DIRS}")
 MESSAGE("OGRE_INCLUDE_DIR: ${OGRE_INCLUDE_DIR}")
